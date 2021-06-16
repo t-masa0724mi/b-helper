@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header__bar row">
+        <h1 class="grid-6"><a href="/">b-helper</a></h1>
+        <div class="user_nav grid-6">
+          <%= link_to "募集する", new_post_path, class: "post" %>
+        </div>
+      </div>
+    </header>
     <%= yield %>
+    <footer>
+      <p>
+        Copyright b-helper 2021.
+      </p>
+    </footer>
   </body>
 </html>
