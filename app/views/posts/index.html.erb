@@ -1,0 +1,15 @@
+<h2>募集一覧</h2>
+
+<% @posts.each do |post| %>
+  <div class="posts">
+    <div class="post-date">
+      <%= post.game_day %>
+    </div>
+    <div class="post-time">
+      <%= post.game_time.name %>
+    </div>
+    <div class="post-detail">
+      <%= post.detail %>
+    </div>
+  </div>
+<% end %>
