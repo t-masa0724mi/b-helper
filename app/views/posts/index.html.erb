@@ -23,6 +23,11 @@
     </div>
     <div class="post-detail">
       <%= post.detail %>
-    </div>
+    </div>  
+    <span class="name">
+        <a href="/users/<%= post.user.id %>">
+          <span>投稿者</span><%= post.user.nickname %>
+        </a>
+      </span>
   </div>
 <% end %>
